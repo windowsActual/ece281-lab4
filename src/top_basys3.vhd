@@ -100,7 +100,7 @@ begin
 		 );
 		 
     fsm_clk_divider : clock_divider
-        generic map (k_DIV => 100000000 )
+        generic map (k_DIV => 25000000 )
         port map (
             i_clk   => clk,
             i_reset => w_reset_clock,
@@ -108,7 +108,7 @@ begin
         );
      
      tdm_clk_divider : clock_divider
-        generic map (k_DIV => 15000 )
+        generic map (k_DIV => 3750 )
         port map (
             i_clk   => clk,
             i_reset => w_reset_clock,
